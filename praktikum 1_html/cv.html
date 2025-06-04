@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Suhardi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #e6f0fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .header img:hover {
+            transform: scale(1.1);
+        }
+
+        .header h1 {
+            font-size: 2.3em;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .sidebar {
+            background: #dbeafe;
+            padding: 25px;
+            float: left;
+            width: 30%;
+        }
+
+        .content {
+            padding: 25px;
+            float: left;
+            width: 70%;
+        }
+
+        .sidebar h3, .content h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 5px;
+        }
+
+        .sidebar p, .content p {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-info i {
+            color: #3b82f6;
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #1e3a8a;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+
+        .sidebar ul, .content ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul li, .content ul li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .sidebar ul li:before, .content ul li:before {
+            content: '✔';
+            color: #3b82f6;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+
+        .skills span:hover {
+            background: #1e3a8a;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .content .experience, .content .project {
+            margin-bottom: 20px;
+        }
+
+        .content .experience h4, .content .project h4 {
+            color: #1e3a8a;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar, .content {
+                width: 100%;
+                float: none;
+            }
+
+            .header img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="profile.jpg" alt="Foto Profil">
+            <h1>Suhardi</h1>
+            <p>Web Developer | Desainer Grafis</p>
+        </div>
+        <div class="sidebar">
+            <h3>Kontak</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:email@contoh.com">email@contoh.com</a></p>
+                <p><i class="fas fa-phone"></i> +62 123 456 7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Contoh No. 123, Jakarta</p>
+                <p><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/namaanda</a></p>
+            </div>
+            <h3>Pendidikan</h3>
+            <p>
+                <strong>S1 Teknik Informatika</strong><br>
+                Universitas Contoh, Jakarta<br>
+                2018 - 2022
+            </p>
+            <h3>Keterampilan</h3>
+            <div class="skills">
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+                <span>React.js</span>
+                <span>UI/UX Design</span>
+                <span>Adobe Photoshop</span>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Profil</h3>
+            <p>Saya adalah seorang web developer dengan pengalaman 3 tahun dalam membangun aplikasi web yang responsif dan user-friendly. Saya bersemangat dalam menciptakan solusi digital yang inovatif dan memiliki perhatian besar terhadap detail.</p>
+            <h3>Pengalaman Kerja</h3>
+            <div class="experience">
+                <h4>Web Developer - PT Teknologi Maju</h4>
+                <p>Jakarta, 2022 - Sekarang</p>
+                <ul>
+                    <li>Mengembangkan dan memelihara aplikasi web berbasis React.js, meningkatkan performa situs hingga 30%.</li>
+                    <li>Berkolaborasi dengan tim desain untuk menciptakan UI yang intuitif.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h4>Freelance Desainer Grafis</h4>
+                <p>2020 - 2022</p>
+                <ul>
+                    <li>Membuat desain UI/UX untuk berbagai startup lokal, dengan kepuasan klien mencapai 95%.</li>
+                    <li>Mengelola proyek desain dari konsep hingga finalisasi.</li>
+                </ul>
+            </div>
+            <h3>Proyek</h3>
+            <div class="project">
+                <h4>E-Commerce Platform</h4>
+                <ul>
+                    <li>Membuat situs e-commerce dengan fitur pembayaran terintegrasi menggunakan Node.js dan Stripe.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h4>Portfolio Website</h4>
+                <ul>
+                    <li>Mengembangkan situs portfolio pribadi dengan desain modern menggunakan HTML, CSS, dan JavaScript.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
